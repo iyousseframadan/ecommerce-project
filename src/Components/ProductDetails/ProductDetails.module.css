@@ -1,0 +1,141 @@
+.productDetails {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.pageTitle {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 40px;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.imageSection {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.productImage {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+  border-radius: 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.infoSection {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.productTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.category {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--main-color);
+  padding: 6px 14px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.priceRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.rating {
+  font-size: 1.2rem;
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.addBtn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: var(--main-color);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.addBtn:hover {
+  background: var(--main-hover);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.relatedWrapper {
+  margin-top: 60px;
+}
+
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detailsContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .productImage {
+    height: 300px;
+  }
+
+  .productTitle {
+    font-size: 1.6rem;
+  }
+
+  .price {
+    font-size: 1.3rem;
+  }
+
+  .addBtn {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,96 @@
+:root {
+  --main-color: #06b6d4;
+}
+
+.container {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.tableWrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+
+.table thead {
+  background: #f8f8f8;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.table th,
+.table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.productImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f7f7f7;
+}
+
+.productName {
+  font-weight: 600;
+  color: #222;
+}
+
+.price {
+  font-weight: 600;
+  color: #111;
+}
+
+.removeBtn {
+  background: transparent;
+  color: #f44336;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.removeBtn:hover {
+  text-decoration: underline;
+}
+
+.emptyMsg {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #555;
+}

@@ -1,0 +1,87 @@
+.brandsPage {
+  padding: 50px 20px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brandsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.brandCard {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.brandCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.brandInfo {
+  text-align: center;
+  padding: 15px;
+}
+
+.brandName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--main-color);
+  margin-bottom: 6px;
+}
+
+.brandSlug {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .imageWrapper {
+    height: 180px;
+  }
+
+  .brandName {
+    font-size: 1rem;
+  }
+}

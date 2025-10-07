@@ -1,0 +1,86 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: #f9fafb; /* نفس خلفية الهوم */
+  border-top: 1px solid #e5e7eb;
+  color: #4b5563;
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footerLogo img {
+  width: 130px;
+  margin-bottom: 16px;
+}
+
+.footerText {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+/* العناوين */
+.footerHeading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #065f46; /* أخضر غامق */
+  margin-bottom: 16px;
+}
+
+/* الروابط */
+.footerList {
+  list-style: none;
+  padding: 0;
+}
+
+.footerList li {
+  margin-bottom: 8px;
+}
+
+.footerLink {
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #10b981; /* أخضر الموقع */
+  padding-left: 4px;
+}
+
+/* أيقونات السوشيال */
+.socialIcons {
+  display: flex;
+  gap: 18px;
+  font-size: 1.3rem;
+}
+
+.socialIcons a {
+  color: #4b5563;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #10b981;
+  transform: scale(1.2);
+}
+
+/* الشريط السفلي */
+.bottomBar {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-top: 30px;
+}

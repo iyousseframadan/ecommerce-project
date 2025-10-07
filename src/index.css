@@ -1,0 +1,89 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.active{
+  @apply text-black font-bold
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px , rgba(145,158,171,.14) 0px 4px 5px 0px;
+  --font-family: "Open Sans", sans-serif;
+  --rating-color:#ffc908;
+}
+
+body{
+  font-family: var(--font-family) !important;
+}
+
+.rating-color{
+  color: var(--rating-color);
+}
+
+button{
+  cursor: pointer;
+}
+
+.span-pos{
+  left: calc(1 / 2 * 83%);
+}
+
+a , a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.product:hover{
+  box-shadow:  var(--shadow);
+  border: solid 1px var(--main-color);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.product .btn{
+  transition:  transform 0.5s , opacity 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn{
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.font-sm{
+  font-size: 14px;
+}
+
+.text-main{
+  color: var(--main-color);
+}
+
+.text-main-light{
+  color: var(--light-color);
+}
+
+.bg-main{
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light{
+  background-color: var(--light-color) !important;
+}
+
